@@ -6,6 +6,31 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+     colors:{
+        "register-bg":"#ecf1f9",
+        "white":"#fff",
+        "inputFormColor":"#f4f3f3",
+        "linkColor":"#064aa7",
+        "createAccountBtnColor": "#064aa7",
+        "borderColor":"#064aa7",
+        "registerStepsColor":"#0a94c2",
+        "greenChecked":"green",
+        "black":"#000",
+        "navy":"navy",
+        "gray-shade1":"#b1b0b0",
+        "show":"red",
+        "show2":"yellow",
+        "show3":"blue",
+        "anotherColor":"#666666"
+      },
+          screens: {
+      xxl:"1100px",
+      xl:"900px",
+      lg:"750px",
+      md:"600px",
+      sm:"480px",
+      xsm:"320px"
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
