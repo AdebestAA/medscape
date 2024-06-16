@@ -8,6 +8,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { CiLock } from "react-icons/ci";
 import { FaRegEye } from "react-icons/fa6";
 import { FaRegEyeSlash } from "react-icons/fa6";
+import { usePathname, useRouter } from 'next/navigation'
 
 const Register = () => {
     const [clickedProfession,setClickedProfession] = useState("")
@@ -15,6 +16,10 @@ const Register = () => {
     const [showPassword,setShowPassword] = useState(false)
     const [choosenProfession,setchoosenProfession] = useState("please select...")
     const [agreedChecked,setAgreedChecked] = useState(false)
+
+    const pathName = usePathname()
+    const router = useRouter()
+    console.log(pathName);
     const professions = ["Physician","Nurse / Advanced Practice Nurse","physician Assistant","Pharmacist","Medical Student","Health Business / Administration", "Media / Press","non-Professsional","Optometrist","Psychologist","Dentist / Oral Health Professional","Other Healthcare Provider"]
 
     const benefits = ["Latest medical news and expert perspectives","Essential drugs, diseases, and clinical tools","Free CME and professional online education","Share your expert medical opinions by participating in paid surveys"]
@@ -42,7 +47,8 @@ console.log(showProfessionsList);
         <div>
     <article className='flex  xxl:px-32 xl:px-20  gap-8'>
 <section className='w-[62%]'>
-<div className='relative w-[130px] h-[25px] mx-auto mb-[1.7rem]'>
+<div
+className='relative w-[130px] h-[25px] mx-auto mb-[1.7rem]'>
     <Image src={"/medscape.png"} fill alt='medscape-logo' className='object-cover'/>
 </div>
 {/* form section */}
@@ -59,8 +65,11 @@ console.log(showProfessionsList);
     </header>
     {/*  register/login  tab*/}
     <div className='flex justify-center space-x-4 my-6'>
-        <button className='font-bold border-b-2 border-borderColor text-[14px]'>Create Account</button>
-        <button className=' text-[14px]'>Log In</button>
+        <button
+        className={pathName === "/register" ? 'font-bold border-b-2 border-borderColor text-[14px]' : "text-[14px]"}>Create Account</button>
+        <button
+        onClick={()=> router.push("/login")}
+        className={pathName === "/login" ? 'font-bold border-b-2 border-borderColor text-[14px]' : "text-[14px]"}>Log In</button>
 </div>
 {/* sign up header */}
 <h5 className='font-semibold text-center text-xl'>Sign Up for a Free Account</h5>
@@ -194,3 +203,4 @@ className='w-[20px] h-[20px] block border-[2px] hover:border-[3px] focus:border-
   )
 }
 
+export default Register

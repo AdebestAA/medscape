@@ -9,9 +9,12 @@ import { CiLock } from "react-icons/ci";
 import { FaApple } from "react-icons/fa";
 import "../register/register.css"
 import "./login.css"
+import { usePathname, useRouter } from 'next/navigation';
 
 const Login = () => {
 
+    const router = useRouter()
+    const pathName = usePathname()
 
     const googleIcon = ()=> {
         return   <svg className='google-icon-global-font' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
@@ -35,8 +38,11 @@ const Login = () => {
    
     {/*  register/login  tab*/}
     <div className='flex justify-center space-x-4 my-6'>
-        <button className=' text-[14px]'>Create Account</button>
-        <button className='font-bold border-b-2 border-borderColor text-[14px]'>Log In</button>
+        <button 
+        onClick={()=> router.push("/register")}
+         className={pathName === "/register" ? 'font-bold border-b-2 border-borderColor text-[14px]' : "text-[14px]"}>Create Account</button>
+        <button  
+        className={pathName === "/login" ? 'font-bold border-b-2 border-borderColor text-[14px]' : "text-[14px]"}>Log In</button>
 </div>
 {/* sign up header */}
 <h5 className='font-semibold text-center text-xl'>Log In To Your Account</h5>
@@ -130,4 +136,4 @@ const Login = () => {
   )
 }
 
-
+export default Login
