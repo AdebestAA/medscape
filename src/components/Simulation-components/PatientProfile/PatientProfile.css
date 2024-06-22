@@ -1,0 +1,383 @@
+
+
+:root{
+    --BORDER:1px solid blue;
+    --BORDERSECOND:1px solid #aba9a9;
+}
+
+.patient-profile{
+    /* background-color: skyblue; */
+    width: 30%;
+   /* padding-inline: 15px; */
+   border: 1px solid gray;
+   border-radius: 5px;
+   /* height: 500px; */
+}
+
+.image-div{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+
+.inner-image-div{
+    /* background-color: green; */
+    position: relative;
+    width: 150px;
+    height: 100px;
+
+}
+
+.image-div-position{
+    position: absolute;
+    top: -70%;
+}
+.header{
+    padding: 15px 15px ;
+}
+
+.header .header-heading{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.header .header-prgrph{
+    text-align: center;
+    font-size: 0.8rem;
+   
+}
+
+.user-info-section{
+    /* padding-inline: 15px; */
+}
+.user-info-section .nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    border-top:var(--BORDER);
+    border-bottom: var(--BORDER);
+    margin: 0px 15px;
+}
+
+.all-info-container{
+    width: 100%;
+    height: 210px;
+    /* background-color: red; */
+    overflow-y: scroll;
+    padding: 0px 15px;
+
+}
+
+.all-info-container::-webkit-scrollbar{
+    background-color: #ffffff;
+    width: 7px;
+}
+.all-info-container::-webkit-scrollbar-thumb{
+border-radius: 10px;
+background-color: #bab8b8;
+width: 100%;
+height: 10%;
+}
+
+/* {Demographic style} */
+
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  
+}
+
+.each-detail{
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 0px;
+    font-size: 0.7rem;
+}
+
+.border-style{
+border-top: var(--BORDERSECOND);
+border-bottom: var(--BORDERSECOND);
+}
+
+.article{
+    font-size: 0.8rem;
+}
+
+.article-desc-container{
+    display: flex;
+    justify-content: start;
+    margin: 5px 0px;
+}
+.article-desc{
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 5px 0px;
+    border-bottom: var(--BORDER);
+}
+.article-paragraphs p {
+   font-weight: 500;
+    line-height: 1.2rem;
+}
+
+
+/* {visit style} */
+
+.visit-table{
+    /* padding: 0px 15px; */
+
+}
+
+.header-visit{
+    display: flex;
+ 
+}
+.header-div-paragraph{
+    width: 50%;
+}
+.header-visit-data{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-paragraph{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.data-info{
+    font-weight: 600;
+}
+.basic-info{
+    display: flex;
+    justify-content: space-between;
+    /* border-top: var(--BORDERSECOND); */
+    margin-block: 3px;
+    padding: 7px 0px;
+    border-bottom: var(--BORDERSECOND);
+    
+}
+.visit-date-and-btn{
+    width: 50%;
+}
+.visit-data{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.visit-date{
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.visit-btn{
+    font-size: 0.7rem;
+    color: #b3b0b0;
+}
+
+/* {Text styles} */
+
+.text-info-heading-container{
+    display: flex;
+    justify-content: start;
+}
+
+.text-info-heading{
+    color: rgb(192, 190, 190);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.text-info-table{
+    margin-top:1.5rem;
+
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    gap: 20px;
+    font-weight: 500;
+}
+
+.header-span:nth-child(2){
+    width: 50%;
+}
+.header-span:nth-child(1){
+    width: 30%;
+    font-size: 0.9rem;
+    
+}
+.header-span:nth-child(3){
+    width: 20%;
+}
+
+.data-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 10px;
+    padding: 6px 0px;
+    border-bottom: 1px solid black;
+
+}
+
+.data-span:nth-child(1){
+    width: 30%;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+ font-weight: 500;
+    letter-spacing: 1px;
+}
+.data-span:nth-child(2){
+    width: 50%;
+    font-size: 0.8rem;
+    /* text-align: justify; */
+   
+}
+.data-span:nth-child(3){
+    width: 20%;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: rgb(2, 81, 108);
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 199, 255);
+}
+
+
+/*{ Diagnosis }*/
+
+.condition-header-container-diag{
+    margin: 1rem 0px;
+    display: flex;
+    justify-content: start;
+    font-size: 0.8rem;
+    color: gray;
+    font-weight: 500;
+}
+
+.header-container-diag{
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.info-wrapper-diag{
+    padding: 0.7rem 0px;
+    border-bottom: 1px solid blue;
+    display: flex;
+    
+    
+}
+.info-container-diag{
+    margin-top: 1rem;
+
+}
+.header-container-diag .header-span-diag:nth-child(1){
+    width: 50%;
+ 
+    
+}
+.header-container-diag .header-span-diag:nth-child(2){
+    width: 25%;
+  
+}
+.header-container-diag .header-span-diag:nth-child(3){
+    width: 25%;
+ 
+}
+
+.info-wrapper-diag{
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-wrapper-diag .data-span-diag:nth-child(1){
+    width: 50%;
+
+
+}
+.info-wrapper-diag .data-span-diag:nth-child(2){
+    width: 25%;
+    display: grid;
+    align-items: center;
+   
+}
+.info-wrapper-diag .data-span-diag:nth-child(3){
+    width: 25%;
+    display: grid;
+    align-items: center;
+   
+}
+
+
+
+/* {orders} */
+
+.header-container-orders{
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-container-orders{
+    margin-top: 1.2rem;
+}
+
+.header-span-orders:nth-child(1){
+width: 50%;
+}
+.header-span-orders:nth-child(2){
+width: 25%;
+}
+.header-span-orders:nth-child(3){
+width: 25%;
+}
+.info-wrapper-orders{
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0px;
+    border-bottom: 1px solid blue;
+}
+
+.data-orders:nth-child(1){
+width: 50%;
+}
+.data-orders:nth-child(2){
+width: 25%;
+display: flex;
+align-items: center;
+}
+.data-orders:nth-child(3){
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+.data-orders button{
+    color: gray;
+}
+
+.each-more-info-container{
+    display: flex;
+    font-size: 0.8rem;
+    gap: 10px;
+}
+
+.each-more-info-container span:nth-child(1){
+    font-weight: 600;
+}

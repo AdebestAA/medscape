@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { FunctionalityProvider } from "@/FunctionalilyContext";
+import { SimulationProgressProvider } from "@/Contexts/SimulationProgressContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,8 +12,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <SimulationProgressProvider>
+       <FunctionalityProvider>
     <html lang="en">
       <body className={inter.className}>{children}</body>
     </html>
+   </FunctionalityProvider>
+     </SimulationProgressProvider>
+   
   );
 }

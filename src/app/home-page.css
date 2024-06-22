@@ -1,0 +1,100 @@
+/* .btn-span-class {
+    width: 75%;
+    height: 4px;
+    background-color: #7d86a0;
+    position: absolute;
+    border-radius: 3px;
+    transform: all 0.5s linear;
+}
+
+.btn-span-class:first-child {
+    bottom: 60%;
+}
+
+.btn-span-class:last-child {
+    top: 60%;
+}
+
+.hide-center {
+    display: none;
+}
+
+.animate-top {
+    animation-name: rotateTop;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+.animate-bottom {
+    animation-name: rotateBottom;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+@keyframes rotateBottom {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        top: 35%;
+        transform: rotate(-40deg);
+    }
+
+}
+
+
+@keyframes rotateTop {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        bottom: 45%;
+        transform: rotate(40deg);
+    }
+
+}
+
+.animate-top-initial {
+    animation-name: rotateTopInitial;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+.animate-bottom-initial {
+    animation-name: rotateBottomInitial;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+@keyframes rotateBottomInitial {
+    from {
+
+        top: 35%;
+        transform: rotate(-40deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+
+}
+
+
+@keyframes rotateTopInitial {
+    from {
+
+        bottom: 45%;
+        transform: rotate(40deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+
+} */

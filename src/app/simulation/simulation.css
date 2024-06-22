@@ -1,0 +1,20 @@
+
+
+.simulation-main{
+    background-color: transparent;
+    overflow-x: hidden;
+}
+
+
+.simulation-introduction{
+    margin-top: 5rem;
+    display: flex;
+    padding-inline: 2.5rem;
+    gap: 2rem;
+    transition: all 1s linear;
+   
+}
+
+.simulation-interview{
+  
+}

@@ -1,0 +1,44 @@
+
+
+
+
+
+
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 15px;
+  padding-top: 5px;
+    border-bottom: 1px solid #b6b4b4;
+}
+
+
+.header-paragraph{
+    padding-block: 5px;
+    color: rgb(102, 102, 102);
+}
+.image-div-header{
+    position: relative;
+    width: 100px;
+    height: 30px;
+}
+
+.aside-header{
+    display: flex;
+    width: 10%;
+    padding-block: 5px;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.aside-header p{
+    text-transform: uppercase;
+    color: rgb(160, 160, 160);
+}
+.aside-header button{
+    background-color: rgb(236, 236, 236);
+    color: rgb(0, 91, 129);
+    padding: 6px;
+    font-size: 0.8rem;
+    border-radius: 50%;
+}

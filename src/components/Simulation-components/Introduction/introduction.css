@@ -1,0 +1,84 @@
+
+
+.introducton-container{
+    height: 68vh;
+    /* background-color: red; */
+    overflow-y: scroll;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    font-size: 0.8rem;
+}
+.introducton-container::-webkit-scrollbar{
+    background-color: transparent;
+    width: 6px;
+}
+
+.introducton-container::-webkit-scrollbar-thumb{
+    background-color: rgb(174, 173, 173);
+    border-radius: 10px;
+    
+}
+
+.introduction-heading-wrapper{
+    padding: 1rem 0px;
+}
+.introduction-heading{
+    font-size: 1.4rem;
+    color: #085eb4;
+    /* font-weight: 600; */
+}
+.paragraph{
+    color: #373737;
+}
+
+
+.introduction-subheading-wrapper{
+    display: flex;
+    justify-content: start;
+ margin: 1rem 0px;
+}
+
+.introduction-subheading{
+    
+    border-bottom: 1px solid rgb(114, 114, 245);
+    padding: 0.7rem 0px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.table-container{
+    /* border: 1px solid gray; */
+    /* background-color: yellow; */
+    margin-top: 3rem;
+}
+
+.table-container .each{
+    display: flex;
+    /* padding: 0.5rem 1rem; */
+    border-top: 1px solid black;
+    border-left:1px solid black ;
+    border-right:1px solid black ;
+}
+.table-container .each:last-child{
+    
+    border-bottom: 1px solid black;
+}
+.table-container .each .title{
+    width: 15%;
+    display: block;
+    font-weight: 700;
+    padding: 1rem 10px;
+    color: #0606c0;
+    /* background-color: green; */
+}
+.table-container .each .info{
+    width: 85%;
+    /* background-color: red; */
+    border-left:1px solid black ;
+    padding: 1rem 10px;
+    font-weight: 500;
+    /* font-size: 1.2rem; */
+    /* font-weight: 600; */
+}
+

@@ -11,5 +11,20 @@
     box-sizing: border-box;
 }     
 
+/* body{
+    background-color: transparent;
+}
+#root{
+    background-color: transparent;
+} */
 
+.hide{
+    display: none;
+    transform: translateX(-100%);
+    transition: all 1s linear;
+}
 
+.next-show{
+    transform: translateX(100%);
+    transition: all 1s linear;
+}
