@@ -1,4 +1,10 @@
-
+.each-section-wrapper{
+    width: 70%;
+    overflow-x: hidden;
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
 
 .simulation-main{
     background-color: transparent;

@@ -8,6 +8,10 @@ import PatientProfile from '@/components/Simulation-components/PatientProfile/Pa
 import Introduction from '@/components/Simulation-components/Introduction/Introduction'
 import { SimulationProgressContext} from '@/Contexts/SimulationProgressContext'
 import Interview from '@/components/Simulation-components/Interview/Interview'
+import Tests from '@/components/Simulation-components/Tests/Tests'
+import DiagnosesSection from '@/components/Simulation-components/diagnoses/DiagnosesSection'
+
+
 
 
 const Simulation = () => {
@@ -33,11 +37,20 @@ progresAndStepscontainer
 <Header/>
 <article className={step === 0 ? 'simulation-introduction' : "hide"}>
 <PatientProfile/>
+<div className='each-section-wrapper'>
 <Introduction/>
+</div>
 </article>
  {/* interview */}
 <article className={step === 1 ? 'simulation-interview' : "hide"}>
 <Interview/>
+</article>
+<article className={step >= 2 ? 'simulation-introduction' : "hide"}>
+<PatientProfile/>
+<div className='each-section-wrapper'>
+  <Tests/>
+  <DiagnosesSection/>
+</div>
 </article>
 
 <Progress/>

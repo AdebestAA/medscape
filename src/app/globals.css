@@ -28,3 +28,8 @@
     transform: translateX(100%);
     transition: all 1s linear;
 }
+
+
+.hide-section{
+    display: none;
+}
