@@ -42,7 +42,7 @@ setContainerClass("orders-container hide")
     {currenMedication.map((item,index)=>{
         
         return (
-            <aside className='aside'>
+            <aside key={index} className='aside'>
     <h1 className='heading'>{item.name}</h1> 
 
     {/* select-and-verify  */}

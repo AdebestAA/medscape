@@ -30,12 +30,13 @@ setContainerClass("orders-container hide")
 
 
 
-      <section>
-        <div>
-            <button>Closing Remark</button>
+      <section className='closing-remark-container'>
+        <div className='closing-remark-btn-container'>
+            <button className='closing-remark-btn'>Closing Remark</button>
+            <div className='line'></div>
         </div>
-        <article>
-            <h1>Closing remarks</h1>
+        <article className='closing-remark-paragraphs-and-header'>
+            <h1 className='closing-remark-header'>Closing remarks</h1>
             <p>Lisa T., a 61-year-old White woman with a 3-year history of liver cirrhosis, presents to the ED with abdominal swelling and discomfort, malaise, lower-extremity edema, and oliguria. Her symptoms began about 48 hours ago and rapidly worsened, prompting her to seek emergency care.</p>
             <br />
             <p>She was initially diagnosed with HCV infection and chronic liver disease 8 years ago during routine HCV screening. At that time, she was prescribed a 12-week course of antiretroviral treatment with sofosbuvir/velpatasvir and achieved virologic cure. Regular monitoring demonstrated stable liver disease until follow-up assessment 3 years ago, which showed disease progression consistent with cirrhosis and portal hypertension. Treatment was then started with spironolactone and propranolol. Most recent monitoring 2 months ago with testing revealed stable liver disease.</p>
@@ -47,7 +48,7 @@ setContainerClass("orders-container hide")
             <p>Workup did not show signs of structural renal injury or infection. Given the presence of cirrhosis with ascites and absence of signs of structural kidney injury, shock, or current or recent use of nephrotoxic drugs, the clinical presentation for today’s patient is consistent with HRS-AKI.1,5</p>
             <br />
 
-            <h1>MANAGEMENT CONSIDERATIONS</h1>
+            <h1 className='closing-remark-header'>MANAGEMENT CONSIDERATIONS</h1>
 
             <p>Treatment of HRS-AKI is complex and should involve a multidisciplinary team approach, if possible.2 Once the diagnosis of AKI is made, diuretics and nonselective beta-blockers should be held.1 Pharmacologic treatment of HRS-AKI involves the use of albumin for volume expansion along with a preferred vasoconstrictor.1,2 Options for vasoconstrictor therapy include terlipressin (FDA-approved for this indication and preferred by AGA and AASLD guidelines), norepinephrine, or the combination of octreotide plus midodrine.1,2,14 Treatment with albumin plus vasoconstrictor therapy is continued until a total of 14 days of therapy or until 24 hours after the return of serum creatinine level within ≤ 0.3 mg/dL of baseline for 2 consecutive days.1</p>
     <br />
@@ -55,14 +56,14 @@ setContainerClass("orders-container hide")
             <p>Liver transplantation remains the most effective treatment for HRS-AKI because it reverses liver failure, the underlying factor leading to the development of HRS-AKI.1,2 However, given the presence of contraindications and the limited number of available donor organs, patients with HRS-AKI are often unable to proceed with liver transplantation.1,4</p>
     <br />
 
-    <h1>ADDITIONAL RESOURCES</h1>
+    <h1 className='closing-remark-header'>ADDITIONAL RESOURCES</h1>
 
-        <p><a href="#">
+        <p className='additional-resources-link'><a href="#">
         AGA Clinical Practice Update on the Evaluation and Management of Acute Kidney Injury in Patients With Cirrhosis: Expert Review
         </a></p>
 
 
-        <p><a href="#">
+        <p className='additional-resources-link'><a href="#">
         AASLD Guidelines on Ascites, Spontaneous Bacterial Peritonitis and Hepatorenal Syndrome, Management
         </a></p>
         </article>

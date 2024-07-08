@@ -5,3 +5,59 @@
     font-size: 1.5rem;
     text-transform: uppercase;
 }
+
+
+.closing-remark-container{
+    /* background-color: red; */
+}
+
+
+.closing-remark-btn-container{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.closing-remark-btn{
+    border: 1px solid black;
+    border-top-left-radius:7px ;
+    border-top-right-radius:7px ;
+    padding: 0.5rem 0.7rem;
+    border-bottom: 1px solid transparent;
+    width: 15%;
+}
+
+.line{
+   
+    width: 85%;
+    height: inherit;
+    border-bottom: 1px solid black;
+
+}
+
+.closing-remark-paragraphs-and-header{
+    margin-top: 1rem;
+}
+
+
+
+.closing-remark-header{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.closing-remark-paragraphs-and-header p{
+    margin-top:1rem ;
+}
+
+.additional-resources-link{
+    font-size: 0.8rem;
+    color: #12adeb;
+    font-weight: 500;
+    
+}
+
+.additional-resources-link:hover{
+    color: #29bdf8;
+
+}
