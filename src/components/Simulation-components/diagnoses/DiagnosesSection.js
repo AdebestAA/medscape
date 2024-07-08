@@ -45,12 +45,12 @@ const DiagnosesSection = () => {
             date:"Feb 10, 2016"
         },
         {
-            id:1,
+            id:4,
             name:"Hepatitis C Viral Infection",
             date:"Jul 13, 2021"
         },
         {
-            id:4,
+            id:5,
             name:"Chronic Liver Disease - Cirrhosis",
             date:"Feb 10, 2016	"
         },

@@ -1,0 +1,18 @@
+.popup-container {
+    background-color: #00000054;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.show-info {
+    background-color: white;
+    width: 50%;
+    height: 60%;
+}

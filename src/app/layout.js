@@ -2,6 +2,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { FunctionalityProvider } from "@/FunctionalilyContext";
 import { SimulationProgressProvider } from "@/Contexts/SimulationProgressContext";
+import { PopUpContext, PopUpProvider } from "@/Contexts/PopUpContext";
+import { OrdersProvider } from "@/components/Simulation-components/Orders/OrdersProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,9 +16,13 @@ export default function RootLayout({ children }) {
   return (
     <SimulationProgressProvider>
        <FunctionalityProvider>
+     <PopUpProvider>
+      <OrdersProvider>
     <html lang="en">
       <body className={inter.className}>{children}</body>
     </html>
+      </OrdersProvider>
+     </PopUpProvider>
    </FunctionalityProvider>
      </SimulationProgressProvider>
    

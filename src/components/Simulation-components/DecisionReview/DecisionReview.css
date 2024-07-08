@@ -1,0 +1,142 @@
+
+
+
+.header-decision-review .header-heading {
+    color: navy;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+
+.decision-subheading-container {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: start;
+
+}
+
+.decision-subheading-paragraph {
+    border-bottom: 1px solid blue;
+    padding: 0.5rem 0rem;
+
+}
+
+
+.instruction-paragraph-container{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: start;
+
+}
+
+.instruction-paragraph{
+    background-color: skyblue;
+   border-radius: 10px;
+   padding: 0px 5px;
+}
+
+.info-table-container{
+    margin-top: 2rem;
+}
+.add-border-bottom{
+    border-bottom: 1px solid black;
+}
+
+.info-table-header{
+    /* margin: 0.5rem 0rem; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.7rem 0rem;
+}
+
+.info-table-name{
+    width: 50%;
+}
+
+.container-type-action-omission{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.container-type-action{
+    width: 50%;
+    display: flex;
+    gap: 0.5rem;
+    grid-template-columns: repeat(1fr);
+   
+ 
+}
+
+.container-type-action .info-table-type{
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+    width: 45%;
+    text-transform: capitalize;
+    
+    
+}
+.container-type-action .info-table-action{
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+    width: 45%;
+  
+  
+}
+
+.info-table-omission{
+  
+    width: 20%;
+    text-align: center;
+    display: grid;
+    place-content: center;
+}
+
+
+.info-order-btn{
+    background-color: skyblue;
+    border: 1px solid navy;
+    padding: 8px 14px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.info-icon{
+    font-size: 2rem;
+    color: orange;
+}
+
+
+
+.decision-reviewed-table-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 0rem;
+}
+.decision-reviewed-table-header span{
+    width: 20%;
+}
+.decision-reviewed-table-header span:last-child{
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.remove-reviewed-decision{
+    background-color: #f7d3d3;
+    border: 1px solid #f26e6e;
+    padding: 8px 14px;
+    font-weight: bold;
+    color: #f26e6e;
+    border-radius: 4px;
+}
+
+.reviewed-decision-icon{
+    font-size: 2rem;
+    padding-right: 1rem;
+}
