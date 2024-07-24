@@ -2,8 +2,9 @@
 import React from 'react'
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 const PatientInterview = () => {
+
   return (
-    <div className='patient-interview-section'>
+    <div className='patient-interview-section hide-small-screen'>
  <article>
   <h3 className='patient-header'>PATIENT INTERVIEW</h3>
   <p className='patient-paragraph'>Select a question to hear the patient&apos;s response.</p>

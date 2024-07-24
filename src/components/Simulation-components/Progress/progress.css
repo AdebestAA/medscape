@@ -1,12 +1,13 @@
 
 
 .progress{
-    /* background-color: gray; */
+    background-color: #fff;
     position: fixed;
     bottom: 0;
     width: 100%;
     padding-top: 1rem;
     padding-inline: 1.5rem;
+ 
 }
 
 .progress-and-btn-container{
@@ -108,3 +109,26 @@
    width: 1px;
    height: 10px;
 }
+
+@media screen and (max-width:1024px) {
+    
+.progress{
+    z-index: 0;
+}
+
+}
+@media screen and (max-width:480px) {
+.progress-and-steps-container{
+    display: none;
+}
+
+.progress-and-btn-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    padding-inline: 10px;
+}
+
+}
+
+

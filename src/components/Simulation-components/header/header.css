@@ -10,11 +10,24 @@
     padding-inline: 15px;
   padding-top: 5px;
     border-bottom: 1px solid #b6b4b4;
+    margin-top: 0.5rem;
+}
+.chart-btn{
+    display: none;
 }
 
+.show-side-bar-container{
+    display: none;
+}
+
+.image-and-header{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
 
 .header-paragraph{
-    padding-block: 5px;
+   
     color: rgb(102, 102, 102);
 }
 .image-div-header{
@@ -35,10 +48,108 @@
     text-transform: uppercase;
     color: rgb(160, 160, 160);
 }
-.aside-header button{
+.aside-header .social-btn{
     background-color: rgb(236, 236, 236);
     color: rgb(0, 91, 129);
     padding: 6px;
     font-size: 0.8rem;
     border-radius: 50%;
+}
+
+@media screen and (max-width:1024px) {
+        .aside-header{
+        display: flex;
+        width: 20%;
+        padding-block: 5px;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        .aside-header .social-btn {
+        background-color: rgb(236, 236, 236);
+        color: rgb(0, 91, 129);
+        padding: 4px;
+        font-size: 0.8rem;
+        border-radius: 50%;
+        }
+
+        .chart-btn {
+        display: inline;
+        color: rgb(0, 91, 129);
+        border: 1px solid blue;
+        padding: 3px 3px;
+        border-radius: 5px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        }
+}
+
+@media screen and  (max-width:900px){
+        .nav-header{
+        padding:0px 1rem ;
+
+        }
+        .aside-header{
+        width: 30%;
+        }
+
+}
+
+
+@media screen and (max-width:480px) {
+
+        .aside-header .social-btn,.aside-header p{
+        display: none;
+        }
+
+        .nav-header {
+        padding: 0px 1rem;
+        }
+        .show-side-bar-container {
+        display: block;
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        }
+
+        .show-side-bar{
+        padding: 0px 0.5rem;
+        }
+        .image-and-header {
+        width: 50%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        }
+        .image-and-header .header-paragraph{
+        font-size: 0.7rem;
+        }
+
+        .aside-header {
+        width: 25%;
+        align-items: center;
+        justify-content: end;
+
+        }
+
+        .chart-btn {
+        display: inline;
+        color: rgb(0, 91, 129);
+        border: 1px solid blue;
+        padding: 3px 3px;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 0.8rem;
+        letter-spacing: 0px;
+        }
+
+
+        .image-div-header {
+            position: relative;
+            width: 80px;
+            height: 20px;
+        }
+
 }

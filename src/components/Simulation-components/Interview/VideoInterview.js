@@ -1,6 +1,10 @@
-import React from 'react'
+import { FunctionalityContext } from '@/FunctionalilyContext'
+import React, { useContext } from 'react'
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const VideoInterview = () => {
+
+  const {showPatientQuestion,setShowPatientQuestion} = useContext(FunctionalityContext)
 
   const chat = [
     {
@@ -52,9 +56,28 @@ const VideoInterview = () => {
           <source src='./videotest.mp4' type='video/mp4'/>
         </video>
       </article>
+       <div className='select-question-container'><button
+       onClick={()=> setShowPatientQuestion(!showPatientQuestion)}
+       >Select a question</button></div>
       <h1 className='interview-transcription-header'>INTERVIEW TRANSCRIPT</h1>
+{showPatientQuestion &&
+<div className='patient-interview-section'>
+ <article>
+  <h3 className='patient-header'>PATIENT INTERVIEW</h3>
+  <p className='patient-paragraph'>Select a question to hear the patient&apos;s response.</p>
 
-      <aside className='transcription-container'>
+
+<aside className='video-btn'>
+  <button>When did your symptom start</button>
+<span> <MdOutlineKeyboardArrowRight/> </span>
+</aside>
+<aside className='video-btn'>
+  <button>have you header any problem urinating?</button>
+  <span> <MdOutlineKeyboardArrowRight/> </span>
+</aside>
+ </article>
+    </div>}
+     {!showPatientQuestion && <aside className='transcription-container'>
      {chat.map((item,index)=>{
 
       return (
@@ -71,7 +94,7 @@ const VideoInterview = () => {
       )
      })}
 
-      </aside>
+      </aside>}
     </div>
   )
 }

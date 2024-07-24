@@ -24,3 +24,33 @@
 .simulation-interview{
   
 }
+
+@media screen and (max-width:1024px) {
+        .each-section-wrapper {
+        width: 100%;
+        overflow-x: hidden;
+        display: flex;
+        border: 1px solid green;
+        border-radius: 10px;
+        }
+
+        .simulation-introduction {
+        margin-top: 5rem;
+        display: flex;
+        padding-inline: 1rem;
+        gap: 2rem;
+        transition: all 1s linear;
+
+        }
+}
+
+
+@media screen and (max-width:480px) {
+    .each-section-wrapper {
+            width: 100%;
+            overflow-x: hidden;
+            display: flex;
+            border: none;
+            border-radius: 10px;
+        }
+}

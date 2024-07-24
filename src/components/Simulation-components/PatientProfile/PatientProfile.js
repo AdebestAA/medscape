@@ -5,11 +5,24 @@ import Test from './Infos/Test'
 import Diagnoses from './Infos/Diagnoses'
 import Orders from './Infos/Orders'
 import "./PatientProfile.css"
+import { IoClose } from "react-icons/io5";
+import { useContext } from 'react'
+import { FunctionalityContext } from '@/FunctionalilyContext'
 
 
 const PatientProfile = () => {
+const {showPatientProfile,
+setShowPatientProfile} = useContext(FunctionalityContext)
+
+
   return (
-    <div className='patient-profile'>
+    <div className={showPatientProfile ? "patient-profile show-patient" : "patient-profile hide-patient"}>
+      <div className={"container-patient-profile-btn"}>
+      <h1 className='patient-profile-small-screen'>PATIENT PROFILE</h1>
+<button className='close-patient-profile-btn' onClick={()=> {
+  setShowPatientProfile(false)
+  }}><IoClose/></button>
+      </div>
       <div className='image-div'>
         <div className='inner-image-div'>
           <div className='image-div-position'>

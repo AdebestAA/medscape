@@ -1,12 +1,13 @@
 .interview-container{
-  
     height: 80vh;
     padding: 0.5rem 3rem;
     display: flex;
     gap: 2rem;
 }
 
-
+.select-question-container{
+    display: none;
+}
 
 .patient-interview-section{
     width: 25%;
@@ -62,6 +63,7 @@
     height: 100%;
     padding-top: 2rem;
 
+
 }
 
 .video-container{
@@ -115,4 +117,68 @@ overflow-y: scroll;
 
     text-align: end;
     font-weight: 600;
+}
+
+
+@media screen  and (max-width:480px){
+            .hide-small-screen{
+            display: none;
+            }
+            .interview-transcription-header {
+            display: none;
+            color: #2727f3;
+            font-weight: 600;
+            margin: 0.5rem 0rem;
+            }
+            .interview-container {
+            height: 100%;
+            padding: 0.5rem 1.5rem;
+            display: flex;
+            flex-direction:column-reverse;
+            gap: 2rem;
+            }
+            .video-and-transcript {
+            width: 100%;
+            height: 80vh;
+            padding-top: 0rem;
+            }
+
+            .transcription-container {
+            overflow-y: scroll;
+            width: 100%;
+            height: 60%;
+            color: #6a6969;
+            font-size: 0.8rem;
+            padding-right: 1rem;
+            }
+            .video-container {
+            height: 30%;
+            background-color: black;
+            }
+
+            .video-tag {
+            height: 100%;
+            width: 100%;
+            }
+
+            .select-question-container {
+            display: flex;
+            justify-content: end;
+            margin: 0.5rem 0rem;
+            }
+            .select-question-container button{
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            padding: 0.1rem 0.3rem;
+            }
+
+
+            .patient-interview-section {
+            width: 100%;
+            border: 1px solid #a2a1a1;
+            height: 100%;
+            padding: 2rem 0rem;
+            border-radius: 10px;
+            }
 }

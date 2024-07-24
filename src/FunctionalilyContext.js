@@ -1,11 +1,14 @@
 "use client"
-const {  createContext, useState, useContext } = require("react")
+import { createContext,useState,useContext } from "react"
+
+
 
 const FunctionalityContext = createContext()
 
 const FunctionalityProvider = ({children})=>{
 const [showSearchBar,setShowSearchBar] = useState(false)
-
+const [showPatientProfile,setShowPatientProfile] = useState(false)
+const [showPatientQuestion,setShowPatientQuestion] = useState(false)
 
 const openSearchBar = ()=>{
     setShowSearchBar(true)
@@ -17,7 +20,11 @@ const closeSearchBar = ()=>{
 <FunctionalityContext.Provider value={{
 showSearchBar,
 openSearchBar,
-closeSearchBar
+closeSearchBar,
+showPatientProfile,
+setShowPatientProfile,
+showPatientQuestion,
+setShowPatientQuestion
 }}>
     {children}
 </FunctionalityContext.Provider>
