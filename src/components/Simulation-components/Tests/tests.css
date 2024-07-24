@@ -129,18 +129,18 @@
         width: 100%;
         transition: all 1s linear;
         margin: 0px 0rem;
-        background-color: red;
+        /* background-color: red; */
 
         }
 
-        .list-header span:first-child {
+        /* .list-header span:first-child {
         width: 40%;
         background-color: orange;
         padding-block: 0.6rem;
         padding-inline: 0rem;
-        }
+        } */
 
-        .list-header span:nth-child(2) {
+        /* .list-header span:nth-child(2) {
         width: 30%;
         background-color: blue;
         padding: 1rem;
@@ -161,10 +161,10 @@
         font-weight: 600;
         background-color:yellow;
         padding: 0rem 1rem;
-        }
+        } */
 
 
-                .list-data {
+                /* .list-data {
                     display: block;
                     gap: 0rem;
                     padding: 0.5rem 0px;
@@ -196,5 +196,5 @@
                     text-align: center;
                     padding-block: 0.6rem;
 
-                }
+                } */
 }
