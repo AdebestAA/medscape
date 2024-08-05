@@ -199,7 +199,18 @@ font-weight: 600;
 
 
 @media screen and (max-width:480px){
+    .tests-container {
+            min-height: 100vh;
+            overflow-y: hidden;
+            /* border: 1px solid gray;
+            border-radius: 10px; */
+            padding: 2rem 1rem;
+            font-size: 0.8rem;
+            width: 100%;
+            transition: all 1s linear;
+            margin: 0px 0.2rem;
     
+        }
 
         .tests-container {
         height: 68vh;
@@ -212,8 +223,6 @@ font-weight: 600;
         width: 100%;
         transition: all 1s linear;
         margin: 0px 0rem;
-        /* background-color: red; */
-        margin-bottom: 10rem;
 
         }
         

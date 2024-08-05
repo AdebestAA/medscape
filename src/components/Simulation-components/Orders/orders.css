@@ -8,7 +8,6 @@
     width: 100%;
     transition: all 0.5s linear;
     margin: 0px 0.2rem;
-    
 }
 
 .orders-container::-webkit-scrollbar-track {
@@ -300,8 +299,8 @@
 
     @media screen  and (max-width:480px){
         .orders-container {
-            height: 68vh;
-            overflow-y: scroll;
+            min-height: 100vh;
+            overflow-y: hidden;
             /* border: 1px solid gray;
             border-radius: 10px; */
             padding: 2rem 1rem;

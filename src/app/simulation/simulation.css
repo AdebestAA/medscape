@@ -46,19 +46,20 @@
 
 
 @media screen and (max-width:480px) {
-    .each-section-wrapper {
-            width: 100%;
-            overflow-x: hidden;
-            display: flex;
-            border: none;
-            border-radius: 10px;
+        .each-section-wrapper {
+        width: 100%;
+        overflow-x: hidden;
+        display: flex;
+        border: none;
+        border-radius: 10px;
+        /* margin-bottom: 10rem; */
         }
-                .simulation-introduction {
-                    margin-top: 5rem;
-                    display: flex;
-                    padding-inline: 0rem;
-                    gap: 2rem;
-                    transition: all 1s linear;
-        
-                }
+        .simulation-introduction {
+        margin-top: 5rem;
+        display: flex;
+        padding-inline: 0rem;
+        gap: 2rem;
+        transition: all 1s linear;
+
+        }
 }
