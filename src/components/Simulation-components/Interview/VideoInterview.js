@@ -56,6 +56,7 @@ const VideoInterview = () => {
           <source src='./videotest.mp4' type='video/mp4'/>
         </video>
       </article>
+      
        <div className='select-question-container'><button
        onClick={()=> setShowPatientQuestion(!showPatientQuestion)}
        >Select a question</button></div>

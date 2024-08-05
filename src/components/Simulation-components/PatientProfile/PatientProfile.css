@@ -430,7 +430,7 @@ align-items: center;
     /* background-color: red; */
     overflow-y: scroll;
     padding: 0px 15px;
-
+    padding-bottom: 10rem;
     }
 
     .all-info-container::-webkit-scrollbar {
@@ -469,6 +469,93 @@ align-items: center;
         background-color: #fff;
         z-index: 999;
         padding: 0px 0.5rem;
+        font-size: 0.8rem;
+        margin-bottom: 3rem;
     }
 
+    .patient-profile-small-screen {
+        font-size: 1.2rem;
+        padding-left: 1rem;
+        font-weight: 600;
+    }
+
+        .visit-data {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            font-size: 0.7rem;
         }
+        .header-visit-data {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.7rem;
+
+        }
+    
+    .visit-date {
+    font-size: 0.7rem;
+    text-transform: capitalize;
+    /* background-color: red; */
+    font-weight: 600;
+    }
+
+        .article-desc {
+            font-weight: 500;
+            font-size: 0.9rem;
+            padding: 5px 0px;
+            border-bottom: var(--BORDER);
+        }
+        }
+
+
+
+
+    @media screen and (max-width:350px) {
+        .patient-profile {
+        position: fixed;
+        width: 100%;
+        /* padding-inline: 15px; */
+        min-height: 100vh;
+        transition: all 0.5s linear;
+        border: 1px solid gray;
+        border-radius: 5px;
+        background-color: #fff;
+        z-index: 999;
+        padding: 0px 0.5rem;
+        font-size: 0.7rem;
+        margin-bottom: 3rem;
+        }
+
+        .user-info-section .nav {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.7rem;
+        border-top: var(--BORDER);
+        border-bottom: var(--BORDER);
+        margin: 0px 15px;
+        }
+
+        .patient-profile-small-screen {
+        font-size: 1rem;
+        padding-left: 1rem;
+        font-weight: 600;
+        }
+
+ 
+
+    }
+
+
+    @media screen and (max-width:325px) {
+            .all-info-container {
+                    margin-top: 2rem;
+                    width: 100%;
+                    height: 55vh;
+                    /* background-color: red; */
+                    overflow-y: scroll;
+                    padding: 0px 15px;
+                    padding-bottom: 10rem;
+                }
+    }

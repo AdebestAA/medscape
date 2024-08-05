@@ -23,9 +23,9 @@ setContainerClass("orders-container hide")
 }
 },[step])
   return (
-    <div className={containerClass}>
+    <div className={`${containerClass}`}>
        <header className='header-case-review'>
-        <h1 className='header-heading'>DECISON REVIEW</h1>
+        <h1 className='header-heading'>CASE REVIEW</h1>
       </header>
 
 

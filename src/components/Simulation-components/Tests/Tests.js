@@ -100,20 +100,20 @@ const [translate,setTranslate ] = useState(0)
       </header>
 
       <article className='list-container'>
-<header className='list-header'>
+<aside className='list-header-test'>
 <span className='name-section'>
     NAME
 </span>
 <span>ACTION</span>
 <span>GUIDANCE</span>
-</header>
+</aside>
 
 <section className='info-continer'>
     {testList.map((item,index)=>{
 
 
 return (
-<aside key={item.id} className="list-data">
+<aside key={item.id} className="list-data-test">
     <span>
     {item.name}
 </span>

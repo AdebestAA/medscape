@@ -8,6 +8,7 @@
     width: 100%;
     transition: all 0.5s linear;
     margin: 0px 0.2rem;
+    
 }
 
 .orders-container::-webkit-scrollbar-track {
@@ -79,14 +80,14 @@
     font-size: 1rem;
     margin-top: 1rem;
     }
-    .aside{
+    .aside-orders{
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
     }
-    .heading{
+    .heading-drug-name{
     width: 30%;
     }
     .select-container{
@@ -205,7 +206,6 @@
     display: flex;
     justify-content: flex-start;
     gap: 2rem;
-
     }
 
     .add-med-checkbox-input{
@@ -222,13 +222,12 @@
     display: flex;
 
     }
-    .add-non-med-table-header span:first-child{
+    .add-non-med-table-header .name-add-non-med-table-header{
     width: 60%;
     }
 
 
     .add-non-med-table-list-container{
-
     margin-top: 1rem;
 
     }
@@ -268,7 +267,7 @@
     align-items: center;
 
     }
-    .add-non-med-table-each-list span:first-child {
+    .add-non-med-table-each-list .name-add-non-med-table-each-list {
     width: 60%;
     }
     .action-category-guidance-list span:first-child{
@@ -297,4 +296,309 @@
     background-color: skyblue;
     border: 2px solid blue;
     border-radius: 5px;
+    }
+
+    @media screen  and (max-width:480px){
+        .orders-container {
+            height: 68vh;
+            overflow-y: scroll;
+            /* border: 1px solid gray;
+            border-radius: 10px; */
+            padding: 2rem 1rem;
+            font-size: 0.8rem;
+            width: 100%;
+            transition: all 0.5s linear;
+            margin: 0px 0.5rem;
+            margin-bottom: 3rem;
+        }
+        
+      .con-dicon-subheading-container {
+            font-size: 1rem;
+            display: flex;
+            justify-content: start;
+            
+    
+        }
+    
+        .con-dicon-subheading {
+            border-bottom: 1px solid blue;
+            padding: 0.5rem 0rem;
+    
+        }
+
+        .aside-orders {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+
+        .apply-btn-inner-container {
+            width: 100%;
+        }
+
+        .apply-btn {
+            align-self: center;
+            background-color: blue;
+            color: white;
+            padding: 0.2rem 4rem;
+            border-radius: 5px;
+            text-transform: uppercase;
+            margin-top: 1rem;
+            width: inherit;
+        }
+ 
+    
+
+        .add-med-checkbox {
+        cursor: pointer;
+        margin: 3rem 0rem;
+        display: flex;
+        justify-content: flex-start;
+        gap: 2rem;
+        }
+
+
+        .add-non-med-table-header {
+        display: flex;
+        width: 100%;
+        font-size: 0.7rem;
+        font-weight: 600;
+       
+        }
+        .add-non-med-table-header .name-add-non-med-table-header {
+        width: 40%;
+        display: block;
+
+        }
+        .action-category-guidance-header {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+
+
+        }
+
+
+        .action-category-guidance-header span:first-child {
+        width: 30%;
+        }
+
+        .action-category-guidance-header span:nth-child(2) {
+            width: 20%;
+        
+        }
+
+        .action-category-guidance-header span:last-child {
+            width: 30%;
+            
+
+        }
+
+
+        .add-non-med-table-each-list {
+            display: flex;
+            padding: 1rem 0rem;
+            align-items: center;
+            border-bottom: 1px solid black;
+            font-size: 0.7rem;
+        }
+
+        .add-non-med-table-each-list .name-add-non-med-table-each-list {
+        width: 40%;
+        }
+
+        .action-category-guidance-list {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        }
+
+    
+
+    .action-category-guidance-list span:first-child {
+    width: 30%;
+
+    }
+
+    .action-category-guidance-list span:nth-child(2) {
+    width: 30%;
+    background-color: #c7ebf9;
+    border: 1px solid rgb(91, 91, 235);
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.2rem 0rem;
+
+    }
+
+    .action-category-guidance-list span:last-child {
+    width: 30%;
+
+    }
+
+    .aside-orders {
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    }
+    .select-container {
+    display: flex;
+    gap: 0.5rem;
+    /* width: 60%; */
+    /* background-color: blue; */
+
+    }
+    .select-btn-and-label {
+    font-size: 0.7rem;
+    }
+
+    .add-med-checkbox-input {
+    width: 15px;
+    display: block;
+    }
+        
+    }
+
+
+
+    @media screen and (max-width:400px) {
+        
+    }
+
+
+
+
+    @media screen and (max-width:350px) {
+.header-orders .header-heading {
+        color: navy;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+
+        .add-non-med-table-header {
+        display: flex;
+        width: 100%;
+        font-size: 0.6rem;
+        font-weight: 600;
+
+        }
+
+        .add-non-med-table-each-list {
+        display: flex;
+        padding: 1rem 0rem;
+        align-items: center;
+        border-bottom: 1px solid black;
+        font-size: 0.6rem;
+        }
+        .action-category-guidance-list {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        }
+        
+        .add-med-paragraph-container {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 1rem;
+
+        }
+
+        .add-med-paragraph {
+        background-color: skyblue;
+        border-radius: 15px;
+        padding: 0rem 0.3rem;
+        font-size: 0.6rem;
+        }
+
+        .con-dicon-subheading-container {
+        font-size: 0.7rem;
+        display: flex;
+        justify-content: start;
+        }
+
+        .add-med-table-header {
+            display: flex;
+            font-weight: 500;
+            margin-top: 1rem;
+            font-size: 0.65rem;
+        }
+
+        .add-med-table-header span:first-child {
+            width: 60%;
+
+        }
+
+        .add-med-table-header span:nth-child(2) {
+            width: 20%;
+        }
+
+        .add-med-table-header span:last-child {
+            width: 20%;
+        }
+
+        .add-med-container {
+        display: flex;
+        margin-top: 1rem;
+        flex-direction: column;
+        font-size: 0.65rem;
+
+        }
+        .order-section-select {
+        width: 50%;
+        border-radius: 3px;
+        outline: none;
+        padding: 0px 7px;
+        padding: 0rem 1rem;
+        white-space: wrap;
+        border: 1px solid black;
+        }
+        .add-med-checkbox-input {
+        width: 20px;
+        display: block;
+        }
+        .add-med-checkbox {
+        cursor: pointer;
+        margin: 3rem 0rem;
+        display: flex;
+        justify-content: flex-start;
+        gap: 0rem;
+        font-size: 0.6rem;
+        }
+       
+
+        .apply-btn {
+        align-self: center;
+        background-color: blue;
+        color: white;
+        padding: 0.2rem 4rem;
+        border-radius: 5px;
+        text-transform: uppercase;
+        margin-top: 1rem;
+        width: inherit;
+        font-size: 0.65rem;
+        }
+           
+
+        .select-btn-and-label {
+        font-size: 0.5rem;
+        }
+
+        .heading-drug-name {
+        width: 30%;
+        font-size: 0.7rem;
+        }
     }

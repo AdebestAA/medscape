@@ -44,7 +44,6 @@
     flex-direction: column;
     align-items: start;
     margin-bottom: 1rem;
-    background-color: skyblue;
 }
 
 .header-tests .header-heading{
@@ -61,27 +60,30 @@
     letter-spacing: 0.05rem;
 }
 
-.list-container .list-header{
-    display: flex;
-    gap: 3rem;
-    font-weight: 600;
+.list-container .list-header-test{
+display: flex;
+gap: 3rem;
+font-weight: 600;
+  
+    
 }
-.list-header span:first-child{
+.list-header-test span:first-child{
     width: 70%;
     padding-block: 0.6rem;
     padding-inline:0.2rem;
 }
-.list-header span:nth-child(2){
-    width: 12%;
+.list-header-test span:nth-child(2){
+   
+    width: 15%;
     padding-block: 0.6rem ;
 }
-.list-header span:nth-child(3){
-    width: 12%;
+.list-header-test span:nth-child(3){
+    width: 15%;
     padding-block: 0.6rem ;
    
 }
 
-.list-data{
+.list-data-test{
     display: flex;
     gap: 3rem;
     padding: 0.5rem 0px;
@@ -89,15 +91,15 @@
 }
 
 
-.list-data span:first-child {
+.list-data-test span:first-child {
     width: 70%;
     padding-block: 0.6rem;
     padding-inline: 0rem;
 }
 
 
-.list-data span:nth-child(2) {
-    width: 12%;
+.list-data-test span:nth-child(2) {
+    width: 15%;
     text-align: center;
     padding-block: 0.6rem;
     background-color: rgb(245, 252, 255);
@@ -108,11 +110,91 @@
 
 }
 
-.list-data span:nth-child(3) {
-    width: 12%;
+.list-data-test span:nth-child(3) {
+    width: 15%;
     text-align: center;
     padding-block: 0.6rem;
 
+}
+
+@media screen and (max-width:650px) {
+
+
+    .tests-container {
+        height: 68vh;
+
+
+        /* border: 1px solid gray;
+        border-radius: 10px; */
+        padding: 2rem 0.5rem;
+        font-size: 0.8rem;
+        width: 100%;
+        transition: all 1s linear;
+        margin: 0px 0rem;
+        /* background-color: red; */
+        margin-bottom: 10rem;
+
+    }
+
+    .list-container .list-header-test {
+        display: flex;
+        gap: 0.5rem;
+        font-weight: 600;
+        padding: 0rem 0rem;
+    }
+
+    .list-header-test span:first-child {
+        min-width: 45%;
+        padding-block: 0.6rem;
+        padding-inline: 0rem;
+    }
+
+    .list-header-test span:nth-child(2) {
+        min-width: 25%;
+        padding: 1rem;
+        padding-block: 0.6rem;
+    }
+
+    .list-header-test span:nth-child(3) {
+        min-width: 25%;
+        padding-block: 0.6rem;
+        overflow: hidden;
+
+    }
+
+
+    .list-data-test {
+        display: flex;
+        gap: 0.5rem;
+        padding: 0.5rem 0px;
+        border-bottom: 1px solid gray;
+    }
+
+    .list-data-test span:first-child {
+        width: 45%;
+        padding-block: 0.2rem;
+        padding-inline: 0rem;
+
+    }
+
+    .list-data-test span:nth-child(2) {
+        width: 25%;
+        text-align: center;
+        padding-block: 0.6rem;
+        background-color: rgb(245, 252, 255);
+        color: blue;
+        border: 1px solid skyblue;
+        font-weight: 600;
+        border-radius: 8px;
+
+    }
+
+    .list-data-test span:nth-child(3) {
+        width: 25%;
+        text-align: center;
+        padding-block: 0.6rem;
+
+    }
 }
 
 
@@ -121,80 +203,140 @@
 
         .tests-container {
         height: 68vh;
-        overflow-y: hidden;
+       
+    
         /* border: 1px solid gray;
         border-radius: 10px; */
-        padding: 2rem 0rem;
+        padding: 2rem 0.5rem;
         font-size: 0.8rem;
         width: 100%;
         transition: all 1s linear;
         margin: 0px 0rem;
         /* background-color: red; */
+        margin-bottom: 10rem;
 
         }
-
-        /* .list-header span:first-child {
-        width: 40%;
-        background-color: orange;
+        
+        .list-container .list-header-test {
+        display: flex;
+        gap: 0.5rem;
+        font-weight: 600;
+        padding: 0rem 0rem;
+        }
+        .list-header-test span:first-child {
+        min-width:45%;
         padding-block: 0.6rem;
         padding-inline: 0rem;
-        } */
+        }
 
-        /* .list-header span:nth-child(2) {
-        width: 30%;
-        background-color: blue;
+        .list-header-test span:nth-child(2) {
+        min-width: 25%;
         padding: 1rem;
         padding-block: 0.6rem;
         }
 
-        .list-header span:nth-child(3) {
-        width: 12%;
-        background-color: #6a6a6a;
+        .list-header-test span:nth-child(3) {
+        min-width: 25%;
         padding-block: 0.6rem;
         overflow: hidden;
 
         }
 
-        .list-container .list-header {
-        display: flex;
-        gap: 0rem;
+
+        .list-data-test {
+            display: flex;
+            gap: 0.5rem;
+            padding: 0.5rem 0px;
+            border-bottom: 1px solid gray;
+        }
+        .list-data-test span:first-child {
+            width: 45%;
+            padding-block: 0.2rem;
+            padding-inline: 0rem;
+
+        }
+
+        .list-data-test span:nth-child(2) {
+            width: 25%;
+            text-align: center;
+            padding-block: 0.6rem;
+            background-color: rgb(245, 252, 255);
+            color: blue;
+            border: 1px solid skyblue;
+            font-weight: 600;
+            border-radius: 8px;
+
+        }
+
+        .list-data-test span:nth-child(3) {
+            width: 25%;
+            text-align: center;
+            padding-block: 0.6rem;
+
+        }
+}
+
+
+@media screen and (max-width:400px) {
+.header-tests .header-heading {
+        color: navy;
+        font-size: 1.2rem;
         font-weight: 600;
-        background-color:yellow;
-        padding: 0rem 1rem;
-        } */
+        text-transform: uppercase;
+    }
+
+        .list-container .list-header-test {
+        display: flex;
+        gap: 0.5rem;
+        font-weight: 600;
+        font-size: 0.8rem;
+        padding: 0rem 0rem;
+        }
+        .list-data-test {
+        display: flex;
+        gap: 0.5rem;
+        padding: 0.5rem 0px;
+        border-bottom: 1px solid gray;
+        font-size: 0.75rem;
+        }
+
+        .list-data-test span:nth-child(2) {
+        width: 25%;
+        text-align: center;
+        padding-block: 0.6rem;
+        background-color: rgb(245, 252, 255);
+        color: blue;
+        border: 1px solid skyblue;
+        font-weight: 600;
+        border-radius: 8px;
+        }
 
 
-                /* .list-data {
-                    display: block;
-                    gap: 0rem;
-                    padding: 0.5rem 0px;
-                    background-color: yellow;
-                    border-bottom: 1px solid gray;
-                }
-                .list-data span:first-child {
-                    width: 40%;
-                    padding-block: 0.6rem;
-                    padding-inline: 0rem;
-                    background-color: red;
-                    color: green;
-                }
+        .header-tests .header-paragraph {
+        background-color: #d7e9f0;
+        border-radius: 20px;
+        color: #6a6a6a;
+        font-size: 0.5rem;
+        padding-inline: 15px;
+        letter-spacing: 0.02rem;
+        }
+}
 
-                .list-data span:nth-child(2) {
-                    width: 20%;
-                    text-align: center;
-                    padding-block: 0.6rem;
-                    background-color: rgb(245, 252, 255);
-                    color: blue;
-                    border: 1px solid skyblue;
-                    font-weight: 600;
-                    border-radius: 8px;
+@media screen and (max-width:350px) {
+.list-container .list-header-test {
+        display: flex;
+        gap: 0.5rem;
+        font-weight: 600;
+        font-size: 0.6rem;
+        padding: 0rem 0rem;
+    }
 
-                }
+.list-data-test {
+        display: flex;
+        gap: 0.5rem;
+        padding: 0.5rem 0px;
+        border-bottom: 1px solid gray;
+        font-size: 0.6rem;
+    }
 
-                .list-data span:nth-child(3) {
-                    width: 20%;
-                    text-align: center;
-                    padding-block: 0.6rem;
-
-                } */
 }

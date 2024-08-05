@@ -42,8 +42,8 @@ setContainerClass("orders-container hide")
     {currenMedication.map((item,index)=>{
         
         return (
-            <aside key={index} className='aside'>
-    <h1 className='heading'>{item.name}</h1> 
+            <aside key={index} className='aside-orders'>
+    <h1 className='heading-drug-name'>{item.name}</h1> 
 
     {/* select-and-verify  */}
     <div className='select-container'>
@@ -161,7 +161,7 @@ onChange={e => setPreferred({...preferred,spironolactone:e.target.value})}
       </article>
      <div className='add-med-checkbox'>
       <input type="checkbox" id='order-med' className='add-med-checkbox-input'/>
-      <label htmlFor="order-med">I would order a medication not mentioned here</label>
+      <label htmlFor="order-med" className='order-med'>I would order a medication not mentioned here</label>
     </div>
 </form>
       </section>
@@ -179,7 +179,7 @@ onChange={e => setPreferred({...preferred,spironolactone:e.target.value})}
 
 <article className='add-non-med-table-container'>
   <header className='add-non-med-table-header'>
-    <span>NAME</span>
+    <span className='name-add-non-med-table-header'>NAME</span>
     <div className='action-category-guidance-header'>
     <span>CATEGORY</span>
     <span>ACTION</span>
@@ -189,7 +189,7 @@ onChange={e => setPreferred({...preferred,spironolactone:e.target.value})}
   <aside className='add-non-med-table-list-container'>
     <div className='add-non-med-table-each-list'>
 
-    <span>Liver Transplantation</span>
+    <span className='name-add-non-med-table-each-list'>Liver Transplantation</span>
     <div className='action-category-guidance-list'>
     <span>Procedure</span>
     <span>ADD</span>
@@ -198,7 +198,7 @@ onChange={e => setPreferred({...preferred,spironolactone:e.target.value})}
     </div>
     <div className='add-non-med-table-each-list'>
 
-    <span>Liver Transplantation</span>
+    <span  className='name-add-non-med-table-each-list'>Liver Transplantation</span>
     <div className='action-category-guidance-list'>
     <span>Procedure</span>
     <span>ADD</span>
@@ -207,7 +207,7 @@ onChange={e => setPreferred({...preferred,spironolactone:e.target.value})}
     </div>
     <div className='add-non-med-table-each-list'>
 
-    <span>Liver Transplantation</span>
+    <span  className='name-add-non-med-table-each-list'>Liver Transplantation</span>
     <div className='action-category-guidance-list'>
     <span>Procedure</span>
     <span>ADD</span>
@@ -216,7 +216,7 @@ onChange={e => setPreferred({...preferred,spironolactone:e.target.value})}
     </div>
     <div className='add-non-med-table-each-list'>
 
-    <span>Liver Transplantation</span>
+    <span  className='name-add-non-med-table-each-list'>Liver Transplantation</span>
     <div className='action-category-guidance-list'>
     <span>Procedure</span>
     <span>ADD</span>

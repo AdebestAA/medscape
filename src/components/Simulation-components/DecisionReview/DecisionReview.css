@@ -140,3 +140,136 @@
     font-size: 2rem;
     padding-right: 1rem;
 }
+
+
+
+/* breakpoints */
+
+@media screen and (max-width:480px) {
+    .decisions-margin{
+        margin-bottom: 3rem;
+    }
+        .instruction-paragraph-container {
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: start;
+        font-size: 0.7rem;
+
+        }
+
+        .info-table-container {
+        margin-top: 2rem;
+
+        }
+
+        .just-for-info-table-header{
+            font-weight: 600;
+        }
+        .info-table-header {
+        /* margin: 0.5rem 0rem; */
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0.7rem 0rem;
+        font-size: 0.75rem;
+        }
+        .decision-reviewed-table-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.7rem 0rem;
+        }
+        .just-for-decision-reviewed-table-header{
+        font-weight: 600;
+        }       
+        .just-for-list{
+        font-size: 0.8rem;
+        }
+
+        .remove-reviewed-decision {
+            background-color: #f7d3d3;
+            border: 1px solid #f26e6e;
+            padding: 6px 10px;
+            font-weight: bold;
+            color: #f26e6e;
+            border-radius: 4px;
+        }
+
+        .reviewed-decision-icon {
+        font-size: 1.8rem;
+        padding-right: 1rem;
+        }
+
+        .info-order-btn {
+        background-color: skyblue;
+        border: 1px solid navy;
+        padding: 6px 10px;
+        font-weight: bold;
+        border-radius: 4px;
+        }
+        .info-icon {
+        font-size: 1.8rem;
+        color: orange;
+        }
+
+}
+
+
+@media screen and (max-width:400px) {
+        .instruction-paragraph-container {
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: start;
+        font-size: 0.6rem;
+
+        }
+        .header-decision-review .header-heading {
+        color: navy;
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        }
+
+        .decision-subheading-container {
+        margin-top: 1rem;
+        font-size: 0.95rem;
+        display: flex;
+        justify-content: start;
+
+        }
+
+        .instruction-paragraph {
+            background-color: skyblue;
+            border-radius: 10px;
+            padding: 0px 7px;
+        }
+}
+
+
+
+@media screen and (max-width:350px) {
+    .instruction-paragraph-container {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: start;
+    font-size: 0.5rem;
+
+    }
+    .info-table-header {
+    /* margin: 0.5rem 0rem; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.7rem 0rem;
+    font-size: 0.65rem;
+    }
+
+    .just-for-list {
+    font-size: 0.7rem;
+    }
+    .decision-reviewed-table-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 0rem;
+    font-size: 0.7rem;
+    }
+}

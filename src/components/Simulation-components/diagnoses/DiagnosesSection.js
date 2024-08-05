@@ -71,8 +71,8 @@ const DiagnosesSection = () => {
         <h1 className='header-heading'>DIAGNOSES</h1>
             <p className='header-paragraph'>Select appropriate tests for the patient.</p>
       </header>
-      <article className='list-container'>
-<header className='list-header'>
+      <article className='list-container-diagnoses'>
+<header className='list-header-diagnoses'>
 <span className='name-section'>
     NAME
 </span>
@@ -85,7 +85,7 @@ const DiagnosesSection = () => {
 
 
 return (
-<aside key={item.id} className="list-data">
+<aside key={item.id} className="list-data-diagnoses">
     <span>
     {item.name}
 </span>

@@ -20,7 +20,7 @@ setContainerClass("orders-container hide")
 },[step])
 
   return (
-    <div className={containerClass}>
+    <div className={`${containerClass}`}>
         {/* heading */}
       <header className='header-decision-review'>
         <h1 className='header-heading'>DECISON REVIEW</h1>
@@ -38,7 +38,7 @@ setContainerClass("orders-container hide")
 {/* table of info */}
 <article className='info-table-container'>
     {/* table header */}
-    <header className='info-table-header'>
+    <header className='info-table-header just-for-info-table-header'>
         <span className='info-table-name'>NAME</span>
         <div className='container-type-action-omission'>
             <div className='container-type-action'>
@@ -175,14 +175,14 @@ setContainerClass("orders-container hide")
 {/* Decision reviewded table */}
         <article className='dicision-reviewed-table'>
             {/* header */}
-        <header className='decision-reviewed-table-header'>
+        <header className='decision-reviewed-table-header just-for-decision-reviewed-table-header'>
         <span>NAME</span>
         <span>TYPE</span>
         <span>ACTION</span>
         <span>GUIDANCE</span>
         </header>
         {/* list info */}
-        <aside className='decision-reviewed-table-header'>
+        <aside className='decision-reviewed-table-header just-for-list'>
         <span>propranolol</span>
         <span>Therapies</span>
         <span>
