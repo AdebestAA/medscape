@@ -294,6 +294,20 @@ padding: 0.8rem 0px;
         letter-spacing: 0.05rem;
         max-width: 80%;
     }
+    .diagnoses-container {
+    min-height: 100vh;
+    height: 100%;
+    overflow-y: hidden;
+
+    /* border: 1px solid gray;
+    border-radius: 10px; */
+    padding: 2rem 0.5rem;
+    font-size: 0.8rem;
+    width: 100%;
+    transition: all 0.5s linear;
+    margin: 0px 0rem;
+    padding-bottom: 4rem;
+    }
 
 .list-container-diagnoses .list-header-diagnoses {
     display: flex;
@@ -319,21 +333,21 @@ padding: 0.8rem 0px;
 }
 
 
-.list-data-diagnoses {
+    .list-data-diagnoses {
     display: flex;
     gap: 0.5rem;
     padding: 0.5rem 0px;
     border-bottom: 1px solid gray;
-}
+    }
 
 
-.list-data-diagnoses span:first-child {
+    .list-data-diagnoses span:first-child {
     width: 45%;
     padding-block: 0.6rem;
     padding-inline: 0.2rem;
-}
+    }
 
-.list-data-diagnoses span:nth-child(2) {
+    .list-data-diagnoses span:nth-child(2) {
     width: 25%;
     text-align: center;
     padding-block: 0.3rem;
@@ -343,33 +357,33 @@ padding: 0.8rem 0px;
     font-weight: 600;
     border-radius: 8px;
 
-}
+    }
 
-.list-data-diagnoses span:nth-child(3) {
+    .list-data-diagnoses span:nth-child(3) {
     width: 25%;
     text-align: center;
     padding-block: 0.6rem;
 
-}
-        .checkbox-div {
-            display: flex;
-            gap: 1rem;
-            margin-top: 2rem;
-        font-size: 0.8rem;    
-}
-.existing-data-list-info {
+    }
+    .checkbox-div {
+    display: flex;
+    gap: 0.2rem;
+    margin-top: 2rem;
+    font-size: 0.8rem;    
+    }
+    .existing-data-list-info {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid gray;
     padding: 0.4rem 0px;
     font-size: 0.8rem;
-}
-.existing-header-container {
+    }
+    .existing-header-container {
     display: flex;
     justify-content: start;
     font-size: 1rem;
     margin: 1rem 0rem;
-}
+    }
 
 }
 

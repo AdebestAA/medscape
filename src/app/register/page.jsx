@@ -43,25 +43,27 @@ console.log(showProfessionsList);
         return   <option key={index} value={item}>{item}</option>
     })
   return (
-    <main className='bg-register-bg xxl:w-full xxl:h-full xl:h-screen xl:flex-col block xl:pt-[1.8rem] xxl:pt-[1.8rem] flex xxl:flex-col justify-between'>
+    <main className='bg-register-bg w-full h-full flex-col block xl:pt-[1.8rem] pt-[1.8rem] flex flex-col justify-between md:text-md xsm:text-sm'>
         <div>
-    <article className='flex  xxl:px-32 xl:px-20  gap-8'>
-<section className='w-[62%]'>
+    <article className='flex lg:flex-row md:flex-col sm:flex-col xsm:flex-col xxl:px-32 xl:px-16 lg:px-6 md:px-0 sm:px-0 xsm:px-0 xl:gap-8 lg:gap-4'>
+<section className='lg:w-[62%] md:w-[90%] sm:w-[90%]  xsm:w-[90%] lg:mx-0 md:mx-auto sm:mx-auto xsm:mx-auto'>
 <div
-className='relative w-[130px] h-[25px] mx-auto mb-[1.7rem]'>
+className='relative md:w-[130px] sm:w-[117px] xsm:w-[117px] md:h-[25px] 
+sm:h-[20px] xsm:h-[20px] mx-auto mb-[1.7rem]'>
     <Image src={"/medscape.png"} fill alt='medscape-logo' className='object-cover'/>
 </div>
 {/* form section */}
 
-<div className='w-[100%] shadow-global-class bg-white rounded-md mx-auto px-8 py-4'>
+<div className='w-[100%] shadow-global-class bg-white rounded-md mx-auto xl:px-8
+lg:px-4 md:px-4 sm:px-2 xsm:px-2 py-4'>
 {/* languages button */}
 
     <header className='space-x-4 flex items-center justify-center w-[80%] mx-auto'>
-        <button className='text-[11px] font-bold'>ENGLISH</button>
-        <button className='text-[11px]'>DEUTSCH</button>
-        <button className='text-[11px]'>ESPAÑOL</button>
-        <button className='text-[11px]'>FRANCAIS</button>
-        <button className='text-[11px]'>PORTUGUÊS</button>
+        <button className='md:text-[11px] text-[7px] font-bold'>ENGLISH</button>
+        <button className='md:text-[11px] text-[7px] '>DEUTSCH</button>
+        <button className='md:text-[11px] text-[7px] '>ESPAÑOL</button>
+        <button className='md:text-[11px] text-[7px] '>FRANCAIS</button>
+        <button className='md:text-[11px] text-[7px] '>PORTUGUÊS</button>
     </header>
     {/*  register/login  tab*/}
     <div className='flex justify-center space-x-4 my-6'>
@@ -72,7 +74,7 @@ className='relative w-[130px] h-[25px] mx-auto mb-[1.7rem]'>
         className={pathName === "/login" ? 'font-bold border-b-2 border-borderColor text-[14px]' : "text-[14px]"}>Log In</button>
 </div>
 {/* sign up header */}
-<h5 className='font-semibold text-center text-xl'>Sign Up for a Free Account</h5>
+<h5 className='font-semibold text-center xl:text-xl lg:text-lg'>Sign Up for a Free Account</h5>
 {/* steps container */}
 <article className='w-full h-8 flex px-[2rem] space-x-4 mt-[1.5rem]'>
     {/* first step div */}
@@ -83,8 +85,8 @@ className='relative w-[130px] h-[25px] mx-auto mb-[1.7rem]'>
 
 {/* form container itself */}
 
-<form action="" className='flex flex-col'>
-<label htmlFor="email" className='font-semibold py-[5px]'>Email</label>
+<form action="" className='flex flex-col md:mx-0 sm:mx-2 xsm:mx-2'>
+<label htmlFor="email" className='font-semibold py-[5px] '>Email</label>
 <input 
     id='email'
     type="email"
@@ -155,49 +157,56 @@ setchoosenProfession(e.target.value)
  placeholder='Begin typing and select an option below...'
    className='bg-inputFormColor px-[8px] py-[8px] rounded-sm'
  type="password" />
-<div className='space-x-4 my-8 pl-2 flex items-center'>
+<div className='space-x-4 xl:my-8 lg:my-4 md:my-2 sm:my-2 xsm:my-2 pl-2 flex items-center xl:text-[1rem] lg:text-[0.9rem] md:text-[0.9rem] sm:text-[0.7rem]
+  xsm:text-[0.7rem]'>
 <span 
 onClick={()=> setAgreedChecked(prev => !prev)}
 className='w-[20px] h-[20px] block border-[2px] hover:border-[3px] focus:border-[3px] border-gray-shade1 text-greenChecked font-extrabold text-2xl flex items-center justify-center cursor-pointer rounded-[2px] span-click '>{agreedChecked ? "✔" : ""}</span>
 <p className='inline-block'>{"I agree to Medscape's"} <Link href={"#"} className='text-linkColor ' >Terms of Use</Link> and <Link href={"#"} className='text-linkColor ' >Privacy Policy</Link>  </p>
  </div>
 
-<button type='submit' className='bg-createAccountBtnColor text-white font-bold self-center px-12 py-2 rounded-full my-4'> Create and Account</button>
+<button type='submit' className='bg-createAccountBtnColor text-white md:font-bold sm:font-medium self-center md:px-12 sm:px-8 xsm:px-8 md:py-2 sm:py-[4px] 
+xsm:py-[4px] rounded-full xl:my-4 lg:my-1 md:my-4  sm:my-4 xsm:my-2'> Create an Account</button>
 </form>
 </div>
 </section>
 {/* benefit section */}
-<section className='w-[38%] flex flex-col word-spacing-class items-center '>
-<div className='w-[100%] space-y-4 mt-[7rem] xl:mt-[10rem]'>
+<section className='lg:w-[38%] md:w-[90%] sm:w-[90%] xsm:w-[90%] lg:mx-0 md:mx-auto sm:mx-auto xsm:mx-auto flex flex-col word-spacing-class items-center '>
+<div className='w-[100%] md:space-y-4 sm:space-x-2 xsm:space-x-2 mt-[7rem] xl:mt-[10rem] lg:mt-[10rem] 
+md:mt-[1rem] sm:mt-[1rem] xsm:mt-[1rem] xl:font-bold lg:font-medium md:font-medium
+ xsm:font-normal md:text-[14px] xsm:text-[11px]'>
 
-<header className='font-bold text-center xxl:w-full xl:w-[80%] '>
+<header className=' text-center xxl:w-full xl:w-[80%]'>
     Free Unlimited Access and Benefits
 </header>
 {benefits.map((item,index)=>{
     
-    return <p key={index} className='font-semibold flex'><span className='mt-[5px]'> < IoMdCheckmarkCircleOutline className='text-registerStepsColor mr-4 text-[1.3rem]'/></span> {item}</p>
+    return <p key={index} className='flex'><span className='mt-[5px]'> < IoMdCheckmarkCircleOutline className='text-registerStepsColor mr-4 text-[1.3rem]'/></span> {item}</p>
     })}
 </div>
 </section>
     </article>
 {/* support section */}
-<section className='xxl:pl-[8rem] xl:pl-[6rem] mt-[0.5rem]'>
-    <div className='flex xxl:w-[52%] xl:w-[54%] justify-between'>
-<p className='text-[14px] flex items-center'>< CiLock className='text-[1rem]'/> Your Information is safe and secure</p>
-<Link href={"#"} className='text-createAccountBtnColor font-semibold text-[0.9rem]'>Contact Support </Link>
+<section className='xxl:pl-[8rem] xl:pl-[6rem] lg:pl-[1.5rem] mt-[1.5rem]'>
+    <div className='flex xxl:w-[52%] xl:w-[54%] lg:w-[60%] md:w-[90%] sm:w-[90%]
+    xsm:w-[90%] lg:mx-0 md:mx-auto sm:mx-auto xsm:mx-auto justify-between'>
+<p className='md:text-[14px] xsm:text-[11px] flex items-center'>< CiLock className='text-[1rem]'/> Your Information is safe and secure</p>
+<Link href={"#"} className='text-createAccountBtnColor font-semibold md:text-[0.9rem]  xsm:text-[0.6rem]'>Contact Support </Link>
     </div>
 </section>
  </div>
 
 <footer className='mt-[4rem] flex  flex-col footer-class'>
     {/* footer links */}
-    <section className='xxl:w-[25%]  xl:w-[40%] text-sm text-[0.8rem] mx-auto flex justify-center space-x-[5px] py-4' >
+    <section className='xxl:w-[25%]  xl:w-[40%] text-sm md:text-[0.8rem] 
+    xsm:text-[0.6rem] mx-auto flex justify-center space-x-[5px] py-4' >
     <Link href={"#"} className='px-2 text-black' >About</Link>
     <Link href={"#"} className='relative px-2 apply-vertical-line-class  text-black'>Privacy Policy</Link>
     <Link href={"#"}  className='relative px-2 apply-vertical-line-class  text-black' >Terms of Use</Link>
     <Link href={"#"}  className='relative px-2 apply-vertical-line-class  text-black'>Cookies</Link>
     </section> 
-<p className='w-[50%] text-[1rem] mx-auto text-center'>All material on this website is protected by copyright, Copyright © 1994-2024 by WebMD LLC. This website also contains material copyrighted by 3rd parties.</p>
+<p className='xl:w-[50%] lg:w-[70%] md:w-[90%] sm:w-[90%] xsm:w-[90%] lg:text-[1rem] 
+md:text-[0.9rem] sm:text-[0.8rem] xsm:text-[0.6rem] mx-auto text-center'>All material on this website is protected by copyright, Copyright © 1994-2024 by WebMD LLC. This website also contains material copyrighted by 3rd parties.</p>
 </footer>
     </main>
   )
