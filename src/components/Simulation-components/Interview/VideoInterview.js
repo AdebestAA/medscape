@@ -53,7 +53,7 @@ const VideoInterview = () => {
     <div className='video-and-transcript'>
       <article className='video-container'>
         <video controls className='video-tag'>
-          <source src='./videotest.mp4' type='video/mp4'/>
+          <source src='./bank.mp4' type='video/mp4'/>
         </video>
       </article>
       

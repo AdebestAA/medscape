@@ -165,8 +165,8 @@ className='w-[20px] h-[20px] block border-[2px] hover:border-[3px] focus:border-
 <p className='inline-block'>{"I agree to Medscape's"} <Link href={"#"} className='text-linkColor ' >Terms of Use</Link> and <Link href={"#"} className='text-linkColor ' >Privacy Policy</Link>  </p>
  </div>
 
-<button type='submit' className='bg-createAccountBtnColor text-white md:font-bold sm:font-medium self-center md:px-12 sm:px-8 xsm:px-8 md:py-2 sm:py-[4px] 
-xsm:py-[4px] rounded-full xl:my-4 lg:my-1 md:my-4  sm:my-4 xsm:my-2'> Create an Account</button>
+<button type='submit' className='bg-createAccountBtnColor text-white md:font-bold sm:font-medium self-center md:px-12 sm:px-8 xsm:px-8 md:py-2 sm:py-[4px]
+ xsm:py-[4px] rounded-full xl:my-4 lg:my-1 md:my-4  sm:my-4 xsm:my-2'> Create an Account</button>
 </form>
 </div>
 </section>

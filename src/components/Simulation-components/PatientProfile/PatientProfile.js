@@ -27,7 +27,7 @@ setShowPatientProfile} = useContext(FunctionalityContext)
         <div className='inner-image-div'>
           <div className='image-div-position'>
         <figure className='relative w-[150px] h-[150px] rounded-full border-[2px] border-[blue]'>
-            <Image src={"/model.jpg"} fill className='rounded-full object-cover' alt='model'/>
+            <Image src={"/headshot.gif"} fill className='rounded-full object-cover' alt='model'/>
         </figure>
           </div>
         </div>
