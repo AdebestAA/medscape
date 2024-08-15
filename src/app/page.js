@@ -5,8 +5,17 @@ import "./home-page.css"
 
 import HomeNav from "@/components/HomeNav/HomeNav";
 import { SimulationProgressProvider } from "@/Contexts/SimulationProgressContext";
+import { useState } from "react";
+import { redirect } from "next/navigation";
 export default function Home() {
+const [user,setUser] = useState(false)
 
+
+
+
+if (!user) {
+  redirect("/login")
+}
   return (
     
     <main className=" w-screen h-screen">
