@@ -14,7 +14,7 @@ const [user,setUser] = useState(false)
 
 
 if (!user) {
-  redirect("/login")
+  redirect("/simulation")
 }
   return (
     

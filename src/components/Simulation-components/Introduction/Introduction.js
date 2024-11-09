@@ -1,5 +1,7 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import "./introduction.css"
+import { GraphQLClient, gql } from 'graphql-request';
 
 const examinationNotes = [
   {
@@ -24,17 +26,52 @@ const examinationNotes = [
   },
 ]
 
+// const hygraphEndpoint = "https://us-east-1-shared-usea1-02.cdn.hygraph.com/content/clzwerf0d01fu07uly9n6a4j1/master"
+// const hygraphClient = new GraphQLClient(hygraphEndpoint)
+
+// const getIntroductionData = async()=>{
+//   const query = gql `
+//   query MyQuery {
+//   patients {
+//     heading
+//     subheading
+//     image {
+//       url
+//     }
+//   }
+// }
+//   `
+
+//   const response = await hygraphClient.request(query)
+//   return response
+// }
+
 
 const Introduction = () => {
+const [data,setData] = useState(null)
+
+// useEffect(()=>{
+
+// getDataMyData()
+
+// },[])
+ const getDataMyData = async()=>{
+   const getData =  await getIntroductionData()
+   console.log(getData);
+   setData(getData)
+  }
+
   return (
     <div className='introducton-container'>
       {/* heading */}
       <div className='introduction-heading-wrapper'>
-        <h1 className='introduction-heading'>INTRODUCTION</h1>
+        <h1 className='introduction-heading'>{data?.patients[0]?.heading}</h1>
+        {/* <h1 className='introduction-heading'>INTRODUCTION</h1> */}
       </div>
       {/* sub-heading */}
       <div className='introduction-subheading-wrapper'>
-        <h1 className='introduction-subheading'>History of Present Illness</h1>
+        <h1 className='introduction-subheading'>{data?.patients[0]?.subheading}</h1>
+        {/* <h1 className='introduction-subheading'>History of Present Illness</h1> */}
       </div>
 
       {/* paragraphs */}
