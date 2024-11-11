@@ -16,13 +16,15 @@ import SimulationPopUp from '@/components/PopUps/SimulationPopUp/SimulationPopUp
 import { OrdersContext } from '@/components/Simulation-components/Orders/OrdersProvider'
 import DecisionReview from '@/components/Simulation-components/DecisionReview/DecisionReview'
 import CaseReview from '@/components/Simulation-components/CaseReview/CaseReview'
+import { FunctionalityContext } from '@/FunctionalilyContext'
+import SlideInNav from '@/components/Simulation-components/SlideInNav/SlideInNav'
 
 
 
 
 
 const Simulation = () => {
-
+const {showSideNav,setShowSideNav} = useContext(FunctionalityContext)
  const{
 handleBack,
 handleNext,
@@ -44,7 +46,7 @@ const{showOrdersPopUp}= useContext(OrdersContext)
   {/* popup */}
 {showOrdersPopUp && <OrderPopUp/>}
   {/* introduction */}
-
+{showSideNav && < SlideInNav />}
 <Header/>
 <article className={step === 0 ? 'simulation-introduction' : "hide"}>
 <PatientProfile/>

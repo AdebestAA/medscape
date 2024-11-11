@@ -19,7 +19,7 @@ const Register = () => {
 
     const pathName = usePathname()
     const router = useRouter()
-    console.log(pathName);
+    // console.log(pathName);
     const professions = ["Physician","Nurse / Advanced Practice Nurse","physician Assistant","Pharmacist","Medical Student","Health Business / Administration", "Media / Press","non-Professsional","Optometrist","Psychologist","Dentist / Oral Health Professional","Other Healthcare Provider"]
 
     const benefits = ["Latest medical news and expert perspectives","Essential drugs, diseases, and clinical tools","Free CME and professional online education","Share your expert medical opinions by participating in paid surveys"]
@@ -37,6 +37,10 @@ console.log(showProfessionsList);
     },[showProfessionsList])
 
 
+const handleSubmit = (e)=>{
+    e.preventDefault()
+    router.push("/simulation")
+}
 
     let options = professions.map((item,index)=>{
 
@@ -85,7 +89,7 @@ lg:px-4 md:px-4 sm:px-2 xsm:px-2 py-4'>
 
 {/* form container itself */}
 
-<form action="" className='flex flex-col md:mx-0 sm:mx-2 xsm:mx-2'>
+<form action="" onSubmit={handleSubmit} className='flex flex-col md:mx-0 sm:mx-2 xsm:mx-2'>
 <label htmlFor="email" className='font-semibold py-[5px] '>Email</label>
 <input 
     id='email'

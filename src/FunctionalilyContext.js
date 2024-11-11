@@ -9,6 +9,7 @@ const FunctionalityProvider = ({children})=>{
 const [showSearchBar,setShowSearchBar] = useState(false)
 const [showPatientProfile,setShowPatientProfile] = useState(false)
 const [showPatientQuestion,setShowPatientQuestion] = useState(false)
+const [showSideNav,setShowSideNav] = useState(false)
 
 const openSearchBar = ()=>{
     setShowSearchBar(true)
@@ -24,7 +25,9 @@ closeSearchBar,
 showPatientProfile,
 setShowPatientProfile,
 showPatientQuestion,
-setShowPatientQuestion
+setShowPatientQuestion,
+showSideNav,
+setShowSideNav
 }}>
     {children}
 </FunctionalityContext.Provider>

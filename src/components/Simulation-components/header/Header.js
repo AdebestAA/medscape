@@ -7,13 +7,16 @@ import "./header.css"
 import { FunctionalityContext } from '@/FunctionalilyContext';
 import { SimulationProgressContext } from '@/Contexts/SimulationProgressContext';
 import { FaBars } from "react-icons/fa6";
+import { useRouter } from 'next/navigation';
 
 const Header = () => {
-  const {setShowPatientProfile,showPatientProfile} = useContext(FunctionalityContext)
+  const {setShowPatientProfile,showPatientProfile,showSideNav,setShowSideNav} = useContext(FunctionalityContext)
+  const router = useRouter()
+
   const {step,setStep} = useContext(SimulationProgressContext)
   return (
  <nav className='nav-header'>
-  <div className='show-side-bar-container'><button className='show-side-bar'>< FaBars/></button></div>
+  <div className='show-side-bar-container'><button className='show-side-bar' onClick={()=> setShowSideNav(true)} >< FaBars/></button></div>
   <div className='image-and-header'>
 <p className='header-paragraph'>Medscape Patient Case Simulations</p>
 <div className='image-div-header relative'>
@@ -23,8 +26,13 @@ const Header = () => {
 
 <aside className='aside-header'>
     <p className='share'>SHARE</p>
-    <button className='social-btn'><FaTwitter/></button>
-    <button className='social-btn'><FaLinkedinIn/></button>
+    {/* SOCIAL BTN */}
+    {/* <button className='social-btn'><FaTwitter/></button>
+    <button className='social-btn'><FaLinkedinIn/></button> */}
+
+        {/* LOGIN AND SIGN BTN */}
+    <button className='social-btn' style={{paddingInline:"5px",background:"transparent"}} onClick={()=> router.push("/login")} >LOGIN</button>
+    <button className='social-btn' style={{paddingInline:"5px",background:"transparent"}} onClick={()=> router.push("/register")}>SIGN UP</button>
   {step !== 1 ? <button className='chart-btn'  onClick={()=>{
       setShowPatientProfile(true)
     }}>CHART</button> : ""}
