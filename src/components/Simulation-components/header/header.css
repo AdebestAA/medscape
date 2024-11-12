@@ -126,9 +126,9 @@
         .aside-header p {
             display: none;
         }
-          /* .enter-action-btn{
-            display: ;
-          } */
+          .enter-action-btn{
+            display:none ;
+          }
         .nav-header {
             padding: 0px 1rem;
         }
