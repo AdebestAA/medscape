@@ -31,8 +31,9 @@ const Header = () => {
     <button className='social-btn'><FaLinkedinIn/></button> */}
 
         {/* LOGIN AND SIGN BTN */}
-    <button className='social-btn' style={{paddingInline:"5px",background:"transparent"}} onClick={()=> router.push("/login")} >LOGIN</button>
-    <button className='social-btn' style={{paddingInline:"5px",background:"transparent"}} onClick={()=> router.push("/register")}>SIGN UP</button>
+    <button className='enter-action-btn'  onClick={()=> router.push("/login")} >LOGIN</button>
+
+    <button className='enter-action-btn'  onClick={()=> router.push("/register")}>SIGN UP</button>
   {step !== 1 ? <button className='chart-btn'  onClick={()=>{
       setShowPatientProfile(true)
     }}>CHART</button> : ""}

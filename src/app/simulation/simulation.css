@@ -9,15 +9,18 @@
 .simulation-main{
     background-color: transparent;
     overflow-x: hidden;
+    
 }
 
 
 .simulation-introduction{
     margin-top: 5rem;
+    margin-bottom: 10rem;
     display: flex;
     padding-inline: 2.5rem;
     gap: 2rem;
     transition: all 1s linear;
+   
    
 }
 
@@ -35,6 +38,7 @@
         }
 
         .simulation-introduction {
+            margin-bottom: 5rem;
         margin-top: 5rem;
         display: flex;
         padding-inline: 1rem;
@@ -55,6 +59,7 @@
         /* margin-bottom: 10rem; */
         }
         .simulation-introduction {
+            margin-bottom: 2rem;
         margin-top: 5rem;
         display: flex;
         padding-inline: 0rem;
